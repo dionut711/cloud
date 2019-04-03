@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>
+            Titlu
+        </title>
+    </head>
+
+    <body>
+        <div id="main-body">
+            <div id="dropdown-container">
+                <div id="dropdown-title">
+                    Choose an API:
+                </div>
+                <div id="dropdown-menu">
+                    <select id="dropdown" onchange="onAPISelect()">
+                        
+                    </select>
+                </div>
+            </div>
+            
+            <div id="location-container">
+                <div id = "loading">
+                    <i> Loading </i>
+                </div>
+                <div id="location-container-title">
+                    <u> The IP is located here: </u>
+                </div>
+                <div id="location-data">
+                    <div>
+                        <b> Country: </b> <span id="country"> </span>
+                    </div>
+                    <div>
+                        <b> City: </b> <span id="city"> </span>
+                    </div>
+                    <div>
+                        <b> Address: </b> <span id="address"> </span>
+                    </div>
+                    <div>
+                        <b> Lat: </b> <span id="lat"> </span>
+                    </div>
+                    <div>
+                        <b> Lon: </b> <span id="lon"> </span>
+                    </div>
+                    <div>
+                        <b> Distance: </b> <span id="distance"> </span>
+                    </div>
+                    <div>
+                        <b> Duration: </b> <span id="duration"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/js/index.js"></script>
+</html>
