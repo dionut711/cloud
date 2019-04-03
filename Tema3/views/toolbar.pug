@@ -1,0 +1,16 @@
+div.toolbar
+    table(style='width:100%')
+      td 
+         a(href = '/') Home
+      td
+         a(href = '/movies/page/1') Movies
+      if authentificated
+         td
+            a(href = '/users/account') Account
+         td
+            a(href = '/users/signout') Sign out
+      else
+         td
+            a(href = '/users/signin') Sign in
+         td
+            a(href = '/users/signup') Sign up

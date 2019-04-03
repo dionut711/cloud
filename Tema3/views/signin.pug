@@ -1,0 +1,21 @@
+html
+   head
+      style
+         include ../styles/main.css
+      title Sign In
+   body
+      include ./toolbar.pug
+      div#main-div
+         form(action = "/users/signin", method = "POST").centered
+            table.centered
+               tr
+                  th 
+                     label(for = "Name") Name:
+                  td 
+                     input(name = "Name" value = "" required)
+               tr
+                  th
+                     label(for = "Password") Password:
+                  td
+                     input(name = "Password" value = "" type="password" required)
+            button(type = "submit") Sign In

@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(-90deg, #e0e0ff, #d0d0ff 10%, #c0c0ff 50%, #d0d0ff 90%, #e0e0ff);
+}
+
+.toolbar td {
+    border-radius: 5px;
+    background-color: #369;
+    text-align: center;
+    
+}
+
+.toolbar td a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main-div {
+    text-align: center;
+    padding: 30px;
+}
+
+.centered {
+    margin: 0 auto; 
+}
+
+#like {
+    background-color: #20a020;
+    color: #ffffff;
+    text-decoration: none;
+}
+#dislike {
+    background-color: #a02020;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#like:hover {
+    background-color: #40ff40;
+}
+#dislike:hover {
+    background-color: #ff4040;
+}

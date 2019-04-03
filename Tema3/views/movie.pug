@@ -1,0 +1,30 @@
+html
+    head
+        style
+            include ../styles/main.css
+        script
+            include ../scripts/main.js
+        title Movies
+    body
+        include ./toolbar.pug
+        if authentificated
+            table
+                tr
+                    button#like(onclick='onClickLike(' + movie.ID + ')') like
+                    button#dislike(onclick='onClickDislike(' + movie.ID + ')') dislike
+        table
+            tr
+                th Title
+                td #{movie.Title}
+            tr
+                th Year
+                td #{movie.Year}
+            tr
+                th Rating
+                td #{movie.Rating}
+                
+        a(href= "/search?q=" + movie.Title) Google search
+        div !{youtubevideos}
+        script
+            include ../scripts/search.js
+        <gcse:search> </gcse:search>

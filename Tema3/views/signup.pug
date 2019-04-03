@@ -1,0 +1,27 @@
+html
+   head
+      style
+         include ../styles/main.css
+      title Sign Up
+   body
+      include ./toolbar.pug
+      div#main-div
+         form(action = "/users/signup", method = "POST").centered
+            table.centered
+               tr
+                  th
+                     label(for = "Name") Name:
+                  td
+                     input(name = "Name" value = "" required)
+               tr
+                  th
+                     label(for = "Password") Password:
+                  td
+                     input(name = "Password" value = "" type="password" required)
+               tr
+                  th
+                     label(for = "Email") Email:
+                  td
+                     input(name = "Email" value = "" type="email" required)
+               br
+            button(type = "submit") Sign Up

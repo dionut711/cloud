@@ -1,0 +1,18 @@
+doctype html
+html
+   head
+      style
+         include ../styles/main.css
+      script
+         include ../scripts/account.js
+      title "Account"
+   body(onload="loadSubscribeButton(" + userid + ")")
+      include ./toolbar.pug
+      p Welcome
+      div#subscribe-div
+         button(onclick="subscribe")#subscribe-button Subscribe to our news
+      p Movie recommendations:
+      ul
+         for movie in recommendations
+            li
+               a(href= "/movies/" + movie.ID) #{movie.Title} (#{movie.year}) #{movie.rating}/10

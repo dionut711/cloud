@@ -1,0 +1,19 @@
+html
+   head
+      style
+         include ../styles/main.css
+      title Movies
+   body
+      include ./toolbar.pug
+      p Movies:
+        ul
+            for movie in movies
+                li
+                    a(href= "/movies/" + movie.ID) #{movie.ID}. #{movie.Title}
+      
+      unless firstpage
+         div
+            a(href="/movies/page/" + prevPage) previous
+      unless lastpage
+         div
+            a(href="/movies/page/"+ nextPage) next
